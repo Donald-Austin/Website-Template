@@ -1,0 +1,140 @@
+body {
+	overflow-x: hidden;
+}
+
+div.banner {
+	width:100%;
+	height:80px;
+	margin:auto;
+	color:black;
+	background-color:white;
+	border-bottom-style:none;
+	border-bottom-color:gray;
+}
+
+div.menu {
+	width:100%;
+	height:40px;
+	margin:auto;
+	color:black;
+	background-color:white;
+	border-bottom-style:inset;
+	font-family: "Casteller", Georgia, Monospace;
+}
+
+div.content {
+	position:relative;
+	margin:auto;
+	max-width:650px;
+	padding-left:30px;
+	padding-right:30px;
+	padding-bottom:20px;
+	color:black;
+	font-family: "Cambria", Georgia, Monospace;
+	background-color:white;
+	z-index:1;
+}
+
+div.topadspace {
+	position:relative;
+	visibility:visible;
+	margin:auto;
+	height:100px;
+	background-color:white;
+}
+
+div.rightadspace {
+	position:fixed;
+	visibility:visible;
+	width:125px;
+	height:800px;
+	top:325px;
+	right:3%;
+	background-color:white;
+	z-index:-1;
+}
+
+div.share {
+	position:fixed;
+	visibility:visible;
+	width:125px;
+	height:300px;
+	top:45%;
+	border-top-width:14px;
+	border-top-style:solid;
+	background-color:white;
+	-webkit-align-content: center;
+	z-index:0;
+}
+
+div.footer {
+	position:relative;
+	color:black;
+	font-size:100%;
+	font-family: "Cambria", Georgia, Monospace;
+}
+
+div.logo {
+	margin:auto;
+	position:relative;
+	left:45%;
+}
+
+p.subscribe {
+	display: block;
+	margin: right;
+}
+
+img.content {
+	display: block;
+	margin: auto;
+	max-width: 98%;
+	height: auto;
+}
+
+h1.title {
+	color:black;
+	font-size:290%;
+	padding-top:-10px;
+	font-family: "Cambria", Georgia, Monospace;
+}
+
+h2.subtitle {
+	color:black;
+	font-size:100%;
+	color:grey;
+	font-family: "Cambria", Georgia, Monospace;
+}
+
+h2.share {
+	position:relative;
+	margin:auto;
+	color:black;
+	font-size:150%;
+	font-family: "Cambria", Georgia, Monospace;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}

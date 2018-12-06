@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>A Time for Change</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body onload="position()" onresize="position()">
+
+<script>
+function position() {
+
+// Position content section according to screen width
+	if(window.innerWidth < 950) {
+		document.getElementById("content").style.margin = 0;
+		document.getElementById("content").style.left = 150;
+		if(window.innerWidth < 825) document.getElementById("content").style.left = -25;
+	} else {
+		document.getElementById("content").style.margin = "auto";
+		document.getElementById("content").style.right = 0;	
+	}
+// Align side bars with content section
+	var contentPos = document.getElementById("content").getBoundingClientRect();
+	document.getElementById("share").style.left = contentPos.left - 125;
+	document.getElementById("rightadspace").style.left = contentPos.right + 35;
+	document.getElementById("rightadspace").style.top = contentPos.top + 10;
+}
+</script>
+
+<div class="banner">
+	<div class="logo"><img src="logo.jpg" style="height:80; width:230;"></div>
+</div>
+<div class="menu">
+	<ul>
+		<li><a href="#home">Top Stories</a></li>
+		<li><a href="#news">Archives</a></li>
+		<li><a href="#contact">Analysis</a></li>
+  		<li><a href="#feedback">Submit Feedback</a></li>
+  		<li style="float:right"><a class="active" href="#subscribe">Subscribe</a></li>
+	</ul>
+</div>
+<div class="topadspace" align="middle">
+	<img src="ad.png">
+</div>
+<div class="share" id="share" align="middle">
+	<h2 class="share" id="shareTitle">SHARE</h2>
+	<hr>
+	<img src="fb.png" height="70" width="70">
+	<hr width="70">
+	<img src="t.png" height="70" width="70">
+	<hr width="70">
+	<img src="p.png" height="70" width="70">
+</div>
+<div class="content" id="content" transitionend="positionShare()">
+	<h1 class="title" id="title">&nbsp;A Modern Business</h1>
+	<img src="content.jpg" class="content" id="mainimage"><br><br>
+		<h2 class="subtitle">Author Name, Category, Date Published</h2>
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in dignissim dui. Pellentesque venenatis a leo at imperdiet. Fusce consectetur, mi quis pellentesque sodales, nulla risus feugiat nisi, a auctor libero ex iaculis odio. Aliquam laoreet orci et mauris rhoncus, et elementum magna pellentesque. Suspendisse varius ipsum sed magna pellentesque, sed auctor mi ultricies. Quisque lacinia maximus tristique. Curabitur posuere massa vitae blandit sodales. Sed a molestie risus, sed semper nibh. Ut nec felis ornare, venenatis ipsum id, mattis lectus. Pellentesque dictum in felis non dictum. Donec sit amet magna et orci sollicitudin finibus ultricies non magna. Nam at metus quis nunc dapibus porta. Vivamus suscipit, tellus a fermentum mollis, quam arcu pharetra leo, sed facilisis leo risus pulvinar neque. Nam tortor velit, commodo quis urna non, fringilla eleifend diam.
+
+Aliquam faucibus ante vel lacus sodales eleifend quis ut enim. In euismod ex ut mollis elementum. Sed ac eros eget est ullamcorper mollis ac at diam. Cras suscipit tincidunt facilisis. Vivamus id egestas libero, nec auctor nisl. Nam et enim enim. Cras et magna luctus, sagittis augue mattis, tempor risus. Vivamus id tellus nisi. Mauris dignissim tristique lobortis. Proin consequat neque vel auctor consequat. Vestibulum elementum, libero eget imperdiet aliquet, diam diam venenatis nunc, nec gravida dolor dui non tellus. Nunc accumsan in elit at scelerisque.
+
+Sed eget tellus quis est tincidunt pharetra non blandit ipsum. Aliquam quis cursus ex. Vivamus cursus justo velit, nec molestie justo ultrices suscipit. Praesent malesuada metus iaculis, malesuada purus nec, condimentum magna. Nam odio metus, accumsan scelerisque condimentum quis, blandit non nisl. Nullam lobortis orci sit amet nunc varius, ac sodales mi fermentum. Sed vel metus nec tortor placerat blandit sed at leo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam efficitur ullamcorper arcu in lobortis.
+
+Sed mattis ligula dui, non pretium nunc tempus in. Cras volutpat efficitur elit nec porta. Duis imperdiet lectus eget mattis lobortis. Nam nec metus ac elit bibendum aliquam sit amet sed nisi. Vivamus volutpat nisi id diam elementum venenatis. Duis at metus consequat, aliquet erat in, feugiat sem. Phasellus vel tempus eros, consectetur pretium lectus. Maecenas faucibus erat non pretium congue. Duis consequat orci vitae elit gravida porttitor. In nec erat non dui pulvinar pellentesque sed volutpat nibh. Nulla accumsan fringilla est ac pretium. Maecenas auctor ante eu augue facilisis, at suscipit arcu cursus. Sed vel fringilla leo, non aliquam turpis. Ut finibus ut massa a posuere. Morbi vitae risus dolor.
+
+Vivamus tincidunt porttitor ex non euismod. Nam mollis interdum quam a vestibulum. Proin sagittis velit ipsum, venenatis eleifend ante consequat vitae. Proin in quam malesuada risus consequat malesuada. Cras elementum nulla tortor, sit amet vehicula nibh fermentum a. Quisque posuere vitae massa sit amet ultricies. Nullam accumsan, turpis et convallis hendrerit, diam urna viverra arcu, ut maximus lacus eros sed sem. Aliquam dapibus tincidunt nisl vitae fringilla. Etiam quis auctor orci. Quisque sit amet elementum nibh, ac placerat massa. Integer sit amet dignissim elit. Cras purus nisl, congue in nisi hendrerit, posuere ultrices orci. Praesent fermentum odio vitae neque pulvinar, porttitor vulputate odio dictum. Phasellus semper, magna et aliquam sagittis, tortor tortor laoreet metus, sit amet condimentum urna eros in lorem.
+
+Nunc iaculis nisl dignissim ligula eleifend malesuada. Duis tempor sagittis orci non vehicula. Aenean sit amet lacinia elit, faucibus iaculis lacus. Praesent consequat, lectus eu lobortis tincidunt, dui ligula ultricies elit, id congue arcu augue in tellus. Donec varius eget ligula et mollis. Morbi volutpat suscipit diam, ac vestibulum ante sodales vitae. Mauris ut ultrices est. Pellentesque quis elit turpis. Proin mattis felis eget libero dignissim placerat. Aenean magna dui, pellentesque sit amet est sit amet, sollicitudin faucibus dui. Vivamus feugiat ut neque eget aliquet. Integer ut nibh faucibus, hendrerit risus in, dignissim nulla. Morbi pretium ac nibh vitae feugiat. Vivamus tempor sit amet felis quis auctor.
+
+Fusce rhoncus rhoncus sem. Proin condimentum condimentum interdum. Nulla pretium euismod venenatis. Duis convallis nisi in nibh accumsan, eu sodales diam consequat. Cras blandit tempor justo. Nam id pharetra ante, sed eleifend libero. Proin vitae tempus nunc. Sed ante eros, finibus quis magna et, lobortis aliquam erat. Etiam malesuada feugiat metus ut finibus. Mauris quis massa lacinia, luctus diam non, feugiat odio.
+</div>
+<div class="footer" align="center">
+	<br>
+	Contact Us | FAQ | Site Map | Copyright | Sources | Example
+</div>
+<div class="rightadspace" id="rightadspace">
+	
+</div>
+
+</body>
+</html>
